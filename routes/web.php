@@ -20,10 +20,21 @@ Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::get('/about', function(){
+   return Inertia::render('About') ;
+});
+
+Route::get('/help', function(){
+    return Inertia::render('Help');
+});
+
+Route::get('/terms', function(){
+    return Inertia::render('Terms');
+});
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

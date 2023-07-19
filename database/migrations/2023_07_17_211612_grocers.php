@@ -13,7 +13,7 @@ return new class extends Migration
     {
 
         /**
-         * Add Grocer table for defining grocer-specific data
+         * Add GrocerController table for defining grocer-specific data
          */
         Schema::create('grocers', function(Blueprint $table) {
             $table->bigIncrements('account_number');

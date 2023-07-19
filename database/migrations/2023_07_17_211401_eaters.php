@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         /**
-         * Add Eater table for defining eater-specific data
+         * Add EaterController table for defining eater-specific data
          */
         Schema::create('eaters', function(Blueprint $table){
             $table->foreignId('user_id')
